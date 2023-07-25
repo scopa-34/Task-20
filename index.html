@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-Quality Chat Example with Bootstrap and JavaScript</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container chat-container">
+    <div class="chat" id="chat">
+      <div class="message received">
+        <span class="message-text">Привет! Как дела?</span>
+      </div>
+      <div class="message sent">
+        <span class="message-text">Привет! Все хорошо, спасибо!</span>
+      </div>
+    </div>
+    <div class="user-input input-group">
+      <input type="text" class="form-control" placeholder="Введите сообщение..." id="user-message">
+      <div class="input-group-append">
+        <button class="btn btn-primary" onclick="sendMessage()">Отправить</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
